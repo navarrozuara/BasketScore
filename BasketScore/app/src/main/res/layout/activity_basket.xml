@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.elisa.basketscore.BasketActivity"
+    android:background="@drawable/basket">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnLocal3"
+            android:background="@drawable/btnpuntos3"
+            android:layout_marginBottom="4dp" />
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnLocal2"
+            android:background="@drawable/btnpuntos2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnLocal1"
+            android:background="@drawable/btnpuntos1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnVisita1"
+            android:background="@drawable/btnpuntos1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnVisita2"
+            android:background="@drawable/btnpuntos2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageButton
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:id="@+id/btnVisita3"
+            android:background="@drawable/btnpuntos3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingLeft="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/txtLocal"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/ptsLocal"
+                android:layout_marginBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="35sp" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btnLocalDecre"
+                android:background="@drawable/decremento" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/txtVisita"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""
+                android:id="@+id/ptsVisita"
+                android:layout_marginBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="35sp" />
+
+            <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btnVisitaDecre"
+                android:background="@drawable/decremento" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
